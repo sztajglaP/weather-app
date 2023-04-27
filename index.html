@@ -15,23 +15,27 @@
     <div class="container">
         <div class="top-side">
             <div class="functional-box">
-                <p class="city-name">London</p>
-                <input type="text" class="city-input" placeholder="Enter a city name...">
+                <p class="city-name"></p>
+                <div class="input-area">
+                    <input type="text" class="city-input" placeholder="Enter a city name...">
+                    <button class="city-serach-button">Show</button>
+                </div>
+                <p class="warning"></p>
             </div>
             <div class="image">
-                <img src="./dist/img/unknown.png" alt="">
+                <img src="./dist/img/unknown.png" alt="" id="image">
             </div>
         </div>
         <hr>
         <div class="main-side">
             <table>
                 <tr>
-                    <td>Rain</td>
-                    <td>moderate rain</td>
+                    <td id="weather-area"></td>
+                    <td id="weather-description-area"></td>
                 </tr>
                 <tr>
-                    <td>Temp: 21℃</td>
-                    <td>Humidity: 64%</td>
+                    <td id="temperature-area">Temp: </td>
+                    <td id="humidity-area">Humidity:</td>
                 </tr>
             </table>
         </div>
